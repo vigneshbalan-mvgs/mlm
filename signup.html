@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1>Create an Account!</h1>
+        <p>Join us and get started!</p>
+        <form id="signupForm">
+          <input
+            type="text"
+            class="username"
+            placeholder="Enter username"
+            id="signupEmail"
+            required
+          />
+          <input
+            type="password"
+            class="password"
+            placeholder="Password"
+            id="signupPassword"
+            required
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+        <div class="already-member">
+          Already a member? <a href="login.html">Login Now</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const email = document.getElementById("signupEmail").value;
+          const password = document.getElementById("signupPassword").value;
+
+          // Save the user credentials to localStorage
+          localStorage.setItem("username", email);
+          localStorage.setItem("password", password);
+
+          // Redirect to the login page after successful signup
+          window.location.href = "login.html";
+        });
+    </script>
+  </body>
+</html>
