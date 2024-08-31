@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  position: relative;
 }
 
 .wrapper {
@@ -54,4 +53,19 @@ button {
 }
 button:hover {
   background: rgba(122, 30, 30, 0.767);
+
+}
+
+.already-member {
+  font-size: 0.9rem;
+  margin-top: 1.4rem;
+}
+
+.already-member>a{
+text-decoration: none;
+color: tomato;
+cursor: pointer;
+text-align: center;
+margin-left: 5px;
+
 }

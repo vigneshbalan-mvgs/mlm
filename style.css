@@ -1,29 +1,40 @@
-<span style="font-family: verdana, geneva, sans-serif;">@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-  background-color: #f0f8ff;
+  background-color: #fff5f5; 
 }
+
 .card {
   border-radius: 15px;
   overflow: hidden;
 }
+
 .card-header {
-  background-color: #4caf50;
+  background-color: #ff6347;
   color: white;
-}
-.card-body {
-  background-color: #e8f5e9;
-}
-.btn-custom {
-  background-color: #4caf50;
-  color: white;
-}
-.btn-custom:hover {
-  background-color: #388e3c;
-  color: white;
-}
-.nav-link.active {
-  font-weight: bold;
-  color: #4caf50;
 }
 
+.card-body {
+  background-color: #ffe4e1; 
+}
+
+.btn-custom {
+  background-color: #ff6347; 
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #e5533d;
+  color: white;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  background-color: #ffe4e1;
+  color: #ff6347; 
+}
+
+.text-black {
+  color: #000000;
+}
 

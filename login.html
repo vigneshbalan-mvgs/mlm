@@ -9,10 +9,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="login.css" />
-    <!-- Assuming you have a separate stylesheet -->
   </head>
   <body>
-    <div class="container">
+    <div class="container-login">
       <div class="wrapper">
         <h1>Hello Again!</h1>
         <p>Welcome back you've been missed!</p>
@@ -49,7 +48,6 @@
           const email = document.getElementById("loginEmail").value;
           const password = document.getElementById("loginPassword").value;
 
-          // Simple authentication check
           if (
             localStorage.getItem("username") === email &&
             localStorage.getItem("password") === password

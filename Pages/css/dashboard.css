@@ -1,15 +1,15 @@
+/* Base Styles */
 .container {
   width: 100%;
   max-width: 1200px;
   padding: 20px;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-direction:row;
+  min-height: 100vh;
 }
+
 .text-center {
   font-size: 2rem;
   color: #07001f;
@@ -32,9 +32,7 @@
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
   padding: 2rem 1rem;
   text-align: center;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-card:hover {
@@ -89,3 +87,89 @@
   font-size: 0.9rem;
   color: #777;
 }
+
+/* Media Queries for Responsive Design */
+
+/* For smaller devices like tablets and below */
+@media (max-width: 768px) {
+  .text-center {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .stat-card h4 {
+    font-size: 1.25rem;
+  }
+
+  .stat-card p {
+    font-size: 1.1rem;
+  }
+
+  .card-header {
+    font-size: 1.15rem;
+  }
+
+  .card-body {
+    font-size: 0.95rem;
+  }
+
+  .card-footer {
+    font-size: 0.85rem;
+  }
+
+  .grid {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .recent-activities {
+    margin-top: 30px;
+  }
+}
+
+/* For very small devices like phones */
+@media (max-width: 480px) {
+  .text-center {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .stat-card {
+    padding: 1rem 0.75rem;
+  }
+
+  .stat-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .stat-card p {
+    font-size: 1rem;
+  }
+
+  .card-header {
+    font-size: 1.1rem;
+  }
+
+  .card-body {
+    font-size: 0.9rem;
+  }
+
+  .card-footer {
+    font-size: 0.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Single column layout for cards */
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .recent-activities {
+    margin-top: 20px;
+  }
+}
+
